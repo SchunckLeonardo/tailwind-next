@@ -5,6 +5,7 @@ import { Bold, Italic, Link, List, ListOrdered, Mail } from 'lucide-react'
 import { SelectInput } from '@/components/Form/SelectInput'
 import { SelectItem } from '@/components/Form/SelectInput/SelectItem'
 import { Textarea } from '@/components/Form/Textarea'
+import { Button } from '@/components/Button'
 
 export default function Home() {
   return (
@@ -22,19 +23,12 @@ export default function Home() {
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <button
-              className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm hover:bg-zinc-100"
-              type="button"
-            >
+            <Button variant="outline" type="button">
               Cancel
-            </button>
-            <button
-              className="rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-violet-700"
-              type="submit"
-              form="settings"
-            >
+            </Button>
+            <Button variant="primary" type="submit" form="settings">
               Save
-            </button>
+            </Button>
           </div>
         </div>
         <form
@@ -158,39 +152,24 @@ export default function Home() {
                 </SelectInput>
 
                 <div className="flex items-center gap-1">
-                  <button
-                    type="button"
-                    className="rounded-md p-2 hover:bg-zinc-100"
-                  >
+                  <Button type="button" variant="ghost">
                     <Bold strokeWidth={3} className="h-4 w-4 text-zinc-500" />
-                  </button>
-                  <button
-                    type="button"
-                    className="rounded-md p-2 hover:bg-zinc-100"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <Italic strokeWidth={3} className="h-4 w-4 text-zinc-500" />
-                  </button>
-                  <button
-                    type="button"
-                    className="rounded-md p-2 hover:bg-zinc-100"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <Link strokeWidth={3} className="h-4 w-4 text-zinc-500" />
-                  </button>
-                  <button
-                    type="button"
-                    className="rounded-md p-2 hover:bg-zinc-100"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <List strokeWidth={3} className="h-4 w-4 text-zinc-500" />
-                  </button>
-                  <button
-                    type="button"
-                    className="rounded-md p-2 hover:bg-zinc-100"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <ListOrdered
                       strokeWidth={3}
                       className="h-4 w-4 text-zinc-500"
                     />
-                  </button>
+                  </Button>
                 </div>
               </div>
 
@@ -221,19 +200,12 @@ export default function Home() {
           </div>
 
           <div className="flex items-center justify-end gap-2 pt-5">
-            <button
-              className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm hover:bg-zinc-100"
-              type="button"
-            >
+            <Button variant="outline" type="button">
               Cancel
-            </button>
-            <button
-              className="rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-violet-700"
-              type="submit"
-              form="settings"
-            >
+            </Button>
+            <Button type="submit" form="settings">
               Save
-            </button>
+            </Button>
           </div>
         </form>
       </div>
